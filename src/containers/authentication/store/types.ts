@@ -6,6 +6,8 @@
 import { ActionType } from 'typesafe-actions'
 import * as actions from './actions'
 
-export interface StoreAuthentication {}
+export interface StoreAuthentication {
+  bay: string
+}
 
 export type ActionsAuthentication = ActionType<typeof actions>

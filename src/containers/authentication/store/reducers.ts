@@ -8,7 +8,9 @@ import { Reducer } from 'redux'
 import * as types from './constants'
 import { ActionsAuthentication, StoreAuthentication } from './types'
 
-const initState: StoreAuthentication = {}
+const initState: StoreAuthentication = {
+  bay: 'aadd',
+}
 
 const reducersAuthentication: Reducer<StoreAuthentication, ActionsAuthentication> = (
   state = initState,
