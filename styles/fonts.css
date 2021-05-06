@@ -1,0 +1,110 @@
+/* K2D font */
+@font-face {
+  font-family: 'K2D-BoldItalic';
+  src: url('../assets/fonts/K2D-BoldItalic.ttf');
+}
+@font-face {
+  font-family: 'K2D-Bold';
+  src: url('../assets/fonts/K2D-Bold.ttf');
+}
+@font-face {
+  font-family: 'K2D-ExtraBoldItalic';
+  src: url('../assets/fonts/K2D-ExtraBoldItalic.ttf');
+}
+@font-face {
+  font-family: 'K2D-ExtraBold';
+  src: url('../assets/fonts/K2D-ExtraBold.ttf');
+}
+@font-face {
+  font-family: 'K2D-ExtraLightItalic';
+  src: url('../assets/fonts/K2D-ExtraLightItalic.ttf');
+}
+@font-face {
+  font-family: 'K2D-ExtraLight';
+  src: url('../assets/fonts/K2D-ExtraLight.ttf');
+}
+@font-face {
+  font-family: 'K2D-Italic';
+  src: url('../assets/fonts/K2D-Italic.ttf');
+}
+@font-face {
+  font-family: 'K2D-LightItalic';
+  src: url('../assets/fonts/K2D-LightItalic.ttf');
+}
+@font-face {
+  font-family: 'K2D-Light';
+  src: url('../assets/fonts/K2D-Light.ttf');
+}
+@font-face {
+  font-family: 'K2D-MediumItalic';
+  src: url('../assets/fonts/K2D-MediumItalic.ttf');
+}
+@font-face {
+  font-family: 'K2D-Medium';
+  src: url('../assets/fonts/K2D-Medium.ttf');
+}
+@font-face {
+  font-family: 'K2D-Regular';
+  src: url('../assets/fonts/K2D-Regular.ttf');
+}
+@font-face {
+  font-family: 'K2D-SemiBoldItalic';
+  src: url('../assets/fonts/K2D-SemiBoldItalic.ttf');
+}
+@font-face {
+  font-family: 'K2D-SemiBold';
+  src: url('../assets/fonts/K2D-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'K2D-ThinItalic';
+  src: url('../assets/fonts/K2D-ThinItalic.ttf');
+}
+@font-face {
+  font-family: 'K2D-Thin';
+  src: url('../assets/fonts/K2D-Thin.ttf');
+}
+
+/* Ubuntu fonts */
+@font-face {
+  font-family: 'UTM Avo';
+  src: url('../assets/fonts/UTM Avo.ttf');
+}
+@font-face {
+  font-family: 'Ubuntu-BoldItalic';
+  src: url('../assets/fonts/Ubuntu-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu-Bold';
+  src: url('../assets/fonts/Ubuntu-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu-Italic';
+  src: url('../assets/fonts/Ubuntu-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu-LightItalic';
+  src: url('../assets/fonts/Ubuntu-LightItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu-Light';
+  src: url('../assets/fonts/Ubuntu-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu-MediumItalic';
+  src: url('../assets/fonts/Ubuntu-MediumItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu-Medium';
+  src: url('../assets/fonts/Ubuntu-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu-Regular';
+  src: url('../assets/fonts/Ubuntu-Regular.ttf');
+}
