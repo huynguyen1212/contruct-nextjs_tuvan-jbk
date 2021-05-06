@@ -1,7 +1,7 @@
-import theme from 'styles/theme'
+import theme from 'src/styles/theme'
 import styled from 'styled-components'
 import Input from 'src/components/Input'
-import { mixinsFlexCenter } from 'styles/mixins'
+import { mixinsFlexCenter } from 'src/styles/mixins'
 
 export const Header = styled.header`
   /* margin-bottom: 50px; */

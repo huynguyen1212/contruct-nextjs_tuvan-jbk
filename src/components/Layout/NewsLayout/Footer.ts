@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import theme from 'styles/theme';
+import styled from 'styled-components'
+import theme from 'src/styles/theme'
 
 export const NewsFooter = styled.div`
   background-color: ${theme.color.gray_bg};
@@ -114,7 +114,7 @@ export const NewsFooter = styled.div`
         span {
           font-size: 14px;
         }
-        p{
+        p {
           margin-bottom: 20px;
         }
       }
@@ -143,4 +143,4 @@ export const NewsFooter = styled.div`
       }
     }
   }
-`;
+`

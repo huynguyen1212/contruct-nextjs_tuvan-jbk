@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import theme from 'styles/theme';
+import styled from 'styled-components'
+import theme from 'src/styles/theme'
 
-const Checkbox = styled.input.attrs(props => ({ type: 'checkbox' }))`
+const Checkbox = styled.input.attrs((props) => ({ type: 'checkbox' }))`
   position: relative;
   transition: all 0.25s ease;
   width: 30px;
@@ -42,7 +42,6 @@ const Checkbox = styled.input.attrs(props => ({ type: 'checkbox' }))`
       left: unset;
     }
   }
-`;
+`
 
-
-export default Checkbox;
+export default Checkbox

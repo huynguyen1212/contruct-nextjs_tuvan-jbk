@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import Input from './index';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
-import theme from 'styles/theme';
+import React, { useState } from 'react'
+import styled from 'styled-components'
+import Input from './index'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
+import theme from 'src/styles/theme'
 
 interface CustomLoginInputProps {
-  name: string;
-  placeholder: string;
-  icon: any;
-  type?: string;
-  register: any;
+  name: string
+  placeholder: string
+  icon: any
+  type?: string
+  register: any
 }
 
 const CustomInputStyle = styled.div`
@@ -31,19 +31,13 @@ const CustomInputStyle = styled.div`
     cursor: pointer;
     color: ${theme.color.icon_2};
   }
-`;
+`
 
-const eyeOn = <FontAwesomeIcon icon={faEye} />;
-const eyeOff = <FontAwesomeIcon icon={faEyeSlash} />;
+const eyeOn = <FontAwesomeIcon icon={faEye} />
+const eyeOff = <FontAwesomeIcon icon={faEyeSlash} />
 
-function CustomLoginInput({
-  name,
-  placeholder,
-  icon,
-  type,
-  register,
-}: CustomLoginInputProps) {
-  const [isSecured, setIsSecured] = useState<boolean>(true);
+function CustomLoginInput({ name, placeholder, icon, type, register }: CustomLoginInputProps) {
+  const [isSecured, setIsSecured] = useState<boolean>(true)
 
   return (
     <CustomInputStyle>
@@ -54,12 +48,12 @@ function CustomLoginInput({
         type={type && type === 'password' && isSecured ? 'password' : 'text'}
       />
       {type === 'password' && (
-        <button type='button' onClick={() => setIsSecured(prev => !prev)}>
+        <button type="button" onClick={() => setIsSecured((prev) => !prev)}>
           {isSecured ? eyeOff : eyeOn}
         </button>
       )}
     </CustomInputStyle>
-  );
+  )
 }
 
-export default CustomLoginInput;
+export default CustomLoginInput

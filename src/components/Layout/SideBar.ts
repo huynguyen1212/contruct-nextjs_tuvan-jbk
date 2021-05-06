@@ -1,15 +1,11 @@
-import styled from 'styled-components';
-import CSLayout from './CS';
-import {
-  mixinsFlexCenter,
-  mixinAbsolute,
-  mixinsScrollBar,
-} from 'styles/mixins';
-import theme from 'styles/theme';
+import styled from 'styled-components'
+import CSLayout from './CS'
+import { mixinsFlexCenter, mixinAbsolute, mixinsScrollBar } from 'src/styles/mixins'
+import theme from 'src/styles/theme'
 
 type TSidebar = {
-  show: boolean;
-};
+  show: boolean
+}
 export const WrapSideBar = styled.div`
   position: fixed;
   top: 0;
@@ -24,7 +20,7 @@ export const WrapSideBar = styled.div`
   @media (max-width: 991px) {
     z-index: 3;
   }
-`;
+`
 export const SideBar = styled.div<TSidebar>`
   position: sticky;
   top: 0;
@@ -226,7 +222,7 @@ export const SideBar = styled.div<TSidebar>`
   }
 
   @media (max-width: 991px) {
-    left: ${props => (props.show ? '0' : '-100%')};
+    left: ${(props) => (props.show ? '0' : '-100%')};
     position: fixed;
     top: 0;
     z-index: 15;
@@ -278,4 +274,4 @@ export const SideBar = styled.div<TSidebar>`
   @media (max-width: 577px) {
     width: 100%;
   }
-`;
+`

@@ -67,7 +67,7 @@ const theme = {
     linear_green: 'linear-gradient(180deg, #59E26A 0%, #4ED1A7 100%)',
     // linear_  : "xxxxxx",
   },
-};
+}
 
-export type TypeTheme = typeof theme;
-export default theme;
+export type TypeTheme = typeof theme
+export default theme

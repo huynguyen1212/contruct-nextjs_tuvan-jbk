@@ -3,62 +3,51 @@
  * Modal
  * make by  huyro1212
  */
-import React, { ReactChild, ReactChildren, useEffect } from 'react';
-import ReactDOM from 'react-dom';
-import styled from 'styled-components';
+import React, { ReactChild, ReactChildren, useEffect } from 'react'
+import ReactDOM from 'react-dom'
+import styled from 'styled-components'
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import theme from 'styles/theme';
+import theme from 'src/styles/theme'
 
-import IClose from '@assets/images/icon-close.svg';
-import { mixinsScrollBar, mixinsScrollBarNone } from 'styles/mixins';
+import IClose from '@assets/images/icon-close.svg'
+import { mixinsScrollBar, mixinsScrollBarNone } from 'src/styles/mixins'
 
 interface Props {
-  title: string;
-  isShowing: boolean;
-  toggleModal: React.Dispatch<React.SetStateAction<boolean>> | Function;
-  children: ReactChild | ReactChildren;
-  overwrite?: React.HTMLAttributes<HTMLDivElement>;
-  overwriteChild?: React.HTMLAttributes<HTMLDivElement>;
+  title: string
+  isShowing: boolean
+  toggleModal: React.Dispatch<React.SetStateAction<boolean>> | Function
+  children: ReactChild | ReactChildren
+  overwrite?: React.HTMLAttributes<HTMLDivElement>
+  overwriteChild?: React.HTMLAttributes<HTMLDivElement>
 }
 
-const Modal = ({
-  isShowing,
-  toggleModal,
-  title,
-  children,
-  overwrite,
-  overwriteChild,
-}: Props) => {
+const Modal = ({ isShowing, toggleModal, title, children, overwrite, overwriteChild }: Props) => {
   // clear scroll bar
   useEffect(() => {
-    if (isShowing) document.body.style.overflow = 'hidden';
-    else document.body.style.overflow = 'auto';
+    if (isShowing) document.body.style.overflow = 'hidden'
+    else document.body.style.overflow = 'auto'
     return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, [isShowing]);
+      document.body.style.overflow = 'auto'
+    }
+  }, [isShowing])
 
   return isShowing
     ? ReactDOM.createPortal(
-      <Styles {...overwrite}>
-        <div className="modal" {...overwriteChild}>
-          <div className="modal-header">
-            {title}
-            <img
-              src={IClose}
-              alt="close modal"
-              onClick={() => toggleModal(!isShowing)}
-            />
+        <Styles {...overwrite}>
+          <div className="modal" {...overwriteChild}>
+            <div className="modal-header">
+              {title}
+              <img src={IClose} alt="close modal" onClick={() => toggleModal(!isShowing)} />
+            </div>
+            <div className="modal-content">{children}</div>
           </div>
-          <div className="modal-content">{children}</div>
-        </div>
-      </Styles>,
-      document.body,
-    )
-    : null;
-};
+        </Styles>,
+        document.body
+      )
+    : null
+}
 
-export default Modal;
+export default Modal
 
 const Styles = styled.div`
   position: fixed;
@@ -128,4 +117,4 @@ const Styles = styled.div`
       transform: translateY(0);
     }
   }
-`;
+`

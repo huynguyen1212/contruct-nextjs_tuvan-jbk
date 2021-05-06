@@ -1,6 +1,6 @@
-import { mixinsFlexCenter } from '../../../../styles/mixins'
+import { mixinsFlexCenter } from '../../../styles/mixins'
 import styled from 'styled-components'
-import theme from 'styles/theme'
+import theme from 'src/styles/theme'
 
 interface NewsHeaderProps {
   isLoginRoute: boolean

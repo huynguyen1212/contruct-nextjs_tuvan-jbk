@@ -1,5 +1,5 @@
-import theme from 'styles/theme';
-import styled from 'styled-components';
+import theme from 'src/styles/theme'
+import styled from 'styled-components'
 
 export const SearchLayout = styled.form`
   display: flex;
@@ -7,7 +7,7 @@ export const SearchLayout = styled.form`
   @media (max-width: 1439px) {
     flex-wrap: wrap;
   }
-`;
+`
 
 export const SearchWrapper = styled.div`
   display: flex;
@@ -18,7 +18,7 @@ export const SearchWrapper = styled.div`
   @media (max-width: 767px) {
     width: 100%;
   }
-`;
+`
 
 export const ButtonWrapper = styled.div`
   align-self: flex-end;
@@ -30,7 +30,7 @@ export const ButtonWrapper = styled.div`
   @media (max-width: 1439px) {
     margin-left: auto;
   }
-`;
+`
 
 export const SearchItem = styled.label`
   margin: 8px;
@@ -59,4 +59,4 @@ export const SearchItem = styled.label`
     flex: auto;
     flex-basis: calc(100% - 16px);
   }
-`;
+`
