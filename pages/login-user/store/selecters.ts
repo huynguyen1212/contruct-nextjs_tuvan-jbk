@@ -1,8 +1,8 @@
 /*
-*
-* LoginUser selecters
-* make by huyro1212
-*/
-import rootReducer from "redux/root-reducers";
+ *
+ * LoginUser selecters
+ * make by huyro1212
+ */
+import rootReducer from 'src/redux/root-reducers'
 
-export const selectLoginUserStore = ((state: ReturnType<typeof rootReducer>) => state.LoginUser)
+export const selectLoginUserStore = (state: ReturnType<typeof rootReducer>) => state.LoginUser

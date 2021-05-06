@@ -1,6 +1,3 @@
-
 export default function Authentication() {
-  return (
-    <div>authentication</div>
-  )
+  return <div>authentication</div>
 }

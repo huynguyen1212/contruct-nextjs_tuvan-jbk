@@ -1,8 +1,9 @@
 /*
-*
-* ExpertProfile selecters
-* make by huyro1212
-*/
-import rootReducer from "redux/root-reducers";
+ *
+ * ExpertProfile selecters
+ * make by huyro1212
+ */
+import rootReducer from 'src/redux/root-reducers'
 
-export const selectExpertProfileStore = ((state: ReturnType<typeof rootReducer>) => state.ExpertProfile)
+export const selectExpertProfileStore = (state: ReturnType<typeof rootReducer>) =>
+  state.ExpertProfile

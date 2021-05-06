@@ -1,0 +1,14 @@
+"use strict";
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+exports.__esModule = true;
+exports.SearchItem = exports.ButtonWrapper = exports.SearchWrapper = exports.SearchLayout = void 0;
+var theme_1 = require("styles/theme");
+var styled_components_1 = require("styled-components");
+exports.SearchLayout = styled_components_1["default"].form(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  display: flex;\n  margin: 0 -8px;\n  @media (max-width: 1439px) {\n    flex-wrap: wrap;\n  }\n"], ["\n  display: flex;\n  margin: 0 -8px;\n  @media (max-width: 1439px) {\n    flex-wrap: wrap;\n  }\n"])));
+exports.SearchWrapper = styled_components_1["default"].div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  display: flex;\n  flex-grow: 1;\n  @media (max-width: 1199px) {\n    flex-wrap: wrap;\n  }\n  @media (max-width: 767px) {\n    width: 100%;\n  }\n"], ["\n  display: flex;\n  flex-grow: 1;\n  @media (max-width: 1199px) {\n    flex-wrap: wrap;\n  }\n  @media (max-width: 767px) {\n    width: 100%;\n  }\n"])));
+exports.ButtonWrapper = styled_components_1["default"].div(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  align-self: flex-end;\n  button {\n    width: 170px;\n    float: right;\n    margin: 0 8px 8px;\n  }\n  @media (max-width: 1439px) {\n    margin-left: auto;\n  }\n"], ["\n  align-self: flex-end;\n  button {\n    width: 170px;\n    float: right;\n    margin: 0 8px 8px;\n  }\n  @media (max-width: 1439px) {\n    margin-left: auto;\n  }\n"])));
+exports.SearchItem = styled_components_1["default"].label(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  margin: 8px;\n  /* display: inline-block; */\n  flex: 1 1 0;\n\n  justify-content: space-between;\n  flex-direction: column;\n  display: flex;\n  p {\n    margin-top: 0;\n    margin-bottom: 4px;\n    font-size: 16px;\n    line-height: 19px;\n    color: ", ";\n  }\n  @media (max-width: 1199px) {\n    flex: auto;\n\n    flex-grow: 0;\n    flex-shrink: 0;\n    flex-basis: calc(50% - 16px);\n  }\n\n  @media (max-width: 767px) {\n    flex: auto;\n    flex-basis: calc(100% - 16px);\n  }\n"], ["\n  margin: 8px;\n  /* display: inline-block; */\n  flex: 1 1 0;\n\n  justify-content: space-between;\n  flex-direction: column;\n  display: flex;\n  p {\n    margin-top: 0;\n    margin-bottom: 4px;\n    font-size: 16px;\n    line-height: 19px;\n    color: ", ";\n  }\n  @media (max-width: 1199px) {\n    flex: auto;\n\n    flex-grow: 0;\n    flex-shrink: 0;\n    flex-basis: calc(50% - 16px);\n  }\n\n  @media (max-width: 767px) {\n    flex: auto;\n    flex-basis: calc(100% - 16px);\n  }\n"])), theme_1["default"].color.text_phu);
+var templateObject_1, templateObject_2, templateObject_3, templateObject_4;

@@ -1,1 +1,5 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components'
+
+const Authentication = styled.div``
+
+export default Authentication
