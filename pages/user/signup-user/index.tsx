@@ -1,3 +1,5 @@
-export default function SignupUser() {
-  return <div>signup user</div>
+import SignupUser from 'src/containers/user/signup-user'
+
+export default function SignupUserPage() {
+  return <SignupUser />
 }

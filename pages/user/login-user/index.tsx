@@ -1,3 +1,5 @@
-export default function LoginUser() {
-  return <div>login user</div>
+import LoginUser from 'src/containers/user/login-user'
+
+export default function LoginUserPage() {
+  return <LoginUser />
 }

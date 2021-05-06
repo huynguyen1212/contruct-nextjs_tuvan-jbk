@@ -1,6 +1,4 @@
-
-export default function Home() {
-  return (
-    <div>home</div>
-  )
+import Home from 'src/containers/home'
+export default function HomePage() {
+  return <Home />
 }

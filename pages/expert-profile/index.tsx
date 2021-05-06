@@ -1,6 +1,5 @@
+import ExpertProfile from 'src/containers/expert-profile'
 
-export default function ExpertProfile() {
-  return (
-    <div>expert profile</div>
-  )
+export default function ExpertProfilePage() {
+  return <ExpertProfile />
 }
